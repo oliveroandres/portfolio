@@ -1,0 +1,81 @@
+body {
+
+    background-image: url(../images/background.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    -webkit-baackground-size: cover;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+li{
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-area {
+    list-style: none;
+}
+
+.nav-area li {
+display: inline-block;
+padding: 0 15px;
+text-transform: uppercase; 
+}
+
+.nav-area li a {
+    transition: .3s;
+    color: #fff;
+}
+
+.nav-area li a:hover {
+    color: #2e3f43;
+}
+
+.btn-area {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter_spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #2e3f43;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color:  none;
+    text-align: center;
+}
+
+.footer h6 {
+    color: #fff;
+}
