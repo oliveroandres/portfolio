@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../portfolio/css/style.css">
     <link rel="stylesheet" href="../portfolio/css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }  
+            })
+        });
+    </script>
     <title>Index</title>
 </head>
 <body>
     <header>
-            <img src="../portfolio/images/code.svg" width="70" height="70" alt="" loading="lazy" class="logo">
-            <ul class="nav-area">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Goals</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Projects</a></li>
+        <nav>
+
+            <ul class="menu">
+                <li class="logo"><a href="#">Portfolio-Logo</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Skills</a></li>
+                <li class="item"><a href="#">Gallery</a></li>
+                <li class="item"><a href="#">Projects</a></li>
+                <li class="item button secondary"><a href="#" class="btn-area">Contact</a></li>
+                <li class="toggle"><span class="bars"></span></li>
                 
             </ul>
         </nav>
-        <a href="#" class="btn-area">Contact</a>
+        
     </header>
-    
+<footer>
     <div class="footer"><h6>Personal Github Website 2020.</h6></div>
+</footer>
+    
     
 </body>
 </html>
